@@ -72,7 +72,7 @@ export default function Page() {
           </button>
 
           {/* Imagen y datos animados */}
-          <div className="w-[300px] h-[250px] relative flex items-center justify-center overflow-hidden">
+          <div className="w-[300px] h-[350px] relative flex items-center justify-center overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.div
                 key={tren.id}
@@ -93,8 +93,8 @@ export default function Page() {
                 <Image
                   src={tren.imagen}
                   alt={tren.nombre}
-                  width={380}
-                  height={180}
+                  width={280}
+                  height={80}
                   className="rounded-md shadow-md border border-gray-300"
                 />
                 <h2 className="mt-4 text-xl font-bold text-gray-800">{tren.nombre}</h2>
