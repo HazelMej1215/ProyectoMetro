@@ -93,7 +93,7 @@ export default function Page() {
                 <Image
                   src={tren.imagen}
                   alt={tren.nombre}
-                  width={280}
+                  width={380}
                   height={180}
                   className="rounded-md shadow-md border border-gray-300"
                 />
