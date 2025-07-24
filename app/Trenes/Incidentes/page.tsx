@@ -20,7 +20,7 @@ const Incidentes = () => {
               <th className="p-4 text-xl font-semibold text-gray-700">ID</th>
               <th className="p-4 text-xl font-semibold text-gray-700">Fecha y Hora</th>
               <th className="p-4 text-xl font-semibold text-gray-700">Tipo</th>
-              <th className="p-4 text-xl font-semibold text-gray-700">Descrión</th>
+              <th className="p-4 text-xl font-semibold text-gray-700">Descripción</th>
               <th className="p-4 text-xl font-semibold text-gray-700">Estado</th>
             </tr>
           </thead>
