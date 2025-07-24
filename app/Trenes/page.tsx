@@ -11,6 +11,9 @@ const trenes = [
     velocidad: 80,
     capacidad: 1200,
     linea: 'Línea 1',
+    estacion: 'Pantitlán',
+    tarjeta: '5248-XXXX',
+    empleado: 'ID 1023',
   },
   {
     id: 2,
@@ -19,6 +22,9 @@ const trenes = [
     velocidad: 75,
     capacidad: 1000,
     linea: 'Línea 12',
+    estacion: 'Mixcoac',
+    tarjeta: '8473-XXXX',
+    empleado: 'ID 2031',
   },
   {
     id: 3,
@@ -27,6 +33,9 @@ const trenes = [
     velocidad: 70,
     capacidad: 1100,
     linea: 'Línea 7',
+    estacion: 'El Rosario',
+    tarjeta: '9821-XXXX',
+    empleado: 'ID 1567',
   },
 ];
 
@@ -134,6 +143,39 @@ export default function Page() {
               <p className="text-md font-medium text-orange-600">{tren.linea}</p>
             </div>
           </div>
+        </div>
+
+        {/* Nueva sección con atributos únicos */}
+        <div className="mt-6 w-full max-w-2xl bg-white rounded-xl p-6 shadow-inner border">
+          <h3 className="text-lg font-semibold text-gray-700 mb-4">Información del Sistema</h3>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-gray-800 text-sm">
+            <div className="flex items-center gap-2 p-3 bg-gray-100 rounded-md shadow border">
+              <span className="text-xl">🏙️</span>
+              <span><strong>Estación:</strong> {tren.estacion}</span>
+            </div>
+            <div className="flex items-center gap-2 p-3 bg-gray-100 rounded-md shadow border">
+              <span className="text-xl">💳</span>
+              <span><strong>Tarjeta:</strong> {tren.tarjeta}</span>
+            </div>
+            <div className="flex items-center gap-2 p-3 bg-gray-100 rounded-md shadow border">
+              <span className="text-xl">👷</span>
+              <span><strong>Empleado:</strong> {tren.empleado}</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Botones de acción adicionales */}
+        <div className="mt-6 w-full max-w-2xl flex flex-col sm:flex-row gap-4">
+          <button className="flex-1 bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-xl shadow transition-all">
+            📊 Historial de Usuarios
+          </button>
+          <button className="flex-1 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-xl shadow transition-all">
+            🚨 Reportar Incidente
+          </button>
+          <button className="flex-1 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-xl shadow transition-all">
+            📝 Historial de Incidentes
+          </button>
         </div>
       </div>
     </div>
